@@ -49,7 +49,7 @@
 
     </header>
     <main class="main-inner">
-      <header class="inner-header">
+
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -113,19 +113,20 @@
 
           </fieldset>
           <fieldset>
-            <legend class="catalog-filter-group"> Стоимость, ₽:</legend>
+            <label class="catalog-filter-group"> Стоимость, ₽:</label>
             от
-            <input class="conteol-input-min" type="number" name="min-price" value="0">
+            <input class="control-input-min" type="range" name="min-price" value="0">
             До
-            <input class="conteol-input-max" type="number" name="min-price" value="9000">
+            <input class="control-input-max" type="range" name="min-price" value="9000">
             <input class="cjntrol-input" type="range" name="price-range">
           </fieldset>
 
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="submit">Сбросить</button>
+            <button class="button" type="reset ">Применить</button>
+            <button class="button" type="reset ">Сбросить</button>
           </form>
         </section>
         </header>
+        <h2>Найдено гостиниц:38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешёвое</option>
           <option value="cheap">Сначала популярное</option>
@@ -147,8 +148,7 @@
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
 
             </a>
-            <p >Гостиница</p>
-            <b class="hotel-card-price">от 4000 ₽</b>
+            <p><span>Гостиница</span><b class="hotel-card-price">от 4000 ₽</b></p>
             <a class="hotel-card-button button" href="#">Подробнее</a>
             <a class="hotel-card-button button" href="#">В избранное</a>
             <b class="hotel-card-rating">Рейтинг:8,5</b>
@@ -220,10 +220,10 @@
             <p class="subscription-description">Только полезная информация и никакого спама,честное бойскаутсвое!</p>
 
     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label for="newsletter-email">Email</label>
+      <label class="visually-hidden" for="newsletter-email">Email</label>
       <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">
-        <span class="visually-hidden">Подписаться</span>
+        Подписаться
       </button>
     </form>
 
@@ -255,7 +255,7 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
+        <img class="footer-contacts-address-phone" href="tel:+78005558628">+7 (812) 812-12-12<img>
 
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </section>
