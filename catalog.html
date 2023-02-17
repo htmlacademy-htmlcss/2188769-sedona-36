@@ -113,20 +113,21 @@
 
           </fieldset>
           <fieldset>
-            <label class="catalog-filter-group"> Стоимость, ₽:</label>
-            от
-            <input class="control-input-min" type="range" name="min-price" value="0">
-            До
-            <input class="control-input-max" type="range" name="min-price" value="9000">
-            <input class="cjntrol-input" type="range" name="price-range">
+            <legend class="catalog-filter-group"> Стоимость, ₽:</legend>
+
+            <label>от</label>
+            <input class="control-input-min" type="number" name="min-price" value="0">
+            <label>До</label>
+            <input class="control-input-max" type="number" name="min-price" value="9000">
+
           </fieldset>
 
-            <button class="button" type="reset ">Применить</button>
-            <button class="button" type="reset ">Сбросить</button>
+            <button class="button" type="submit">Применить</button>
+            <button class="button" type="reset">Сбросить</button>
           </form>
         </section>
-        </header>
-        <h2>Найдено гостиниц:38</h2>
+
+        <p>Найдено гостиниц:38</p>p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешёвое</option>
           <option value="cheap">Сначала популярное</option>
@@ -240,7 +241,6 @@
             <a class="button" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
-          </li>
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">Телеграм</span>
@@ -255,7 +255,7 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-contacts-address-phone" href="tel:+78005558628">+7 (812) 812-12-12<img>
+        <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
 
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </section>
